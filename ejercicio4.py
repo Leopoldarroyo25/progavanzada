@@ -1,0 +1,5 @@
+largo=float(input('cual es el largo de tu habitacion?\n'))
+ancho=float(input('cual es el ancho de tu habitacion?\n'))
+resultado1=(largo*ancho)
+resultado2=(0.000247106*resultado1)
+print('El area de la habitacion es de', resultado2 , 'acres')
