@@ -391,3 +391,97 @@ line then your program should report a grade point average of 3.1.
 You may find your solution to Exercise 51 helpful when completing this exercise.
 Your program does not need to do any error checking. It can assume that each value
 entered by the user will always be a valid letter grade or a blank line.
+## Ejercicio 67
+A particular zoo determines the price of admission based on the age of the guest.
+Guests 2 years of age and less are admitted without charge. Children between 3 and
+12 years of age cost $14.00. Seniors aged 65 years and over cost $18.00. Admission
+for all other guests is $23.00.
+Create a program that begins by reading the ages of all of the guests in a group
+from the user, with one age entered on each line. The user will enter a blank line to
+indicate that there are no more guests in the group. Then your program should display
+the admission cost for the group with an appropriate message. The cost should be
+displayed using two decimal places.
+## Ejercicio 68
+A parity bit is a simple mechanism for detecting errors in data transmitted over an
+unreliable connection such as a telephone line. The basic idea is that an additional bit
+is transmitted after each group of 8 bits so that a single bit error in the transmission
+can be detected.
+Parity bits can be computed for either even parity or odd parity. If even parity
+is selected then the parity bit that is transmitted is chosen so that the total number
+of one bits transmitted (8 bits of data plus the parity bit) is even. When odd parity
+is selected the parity bit is chosen so that the total number of one bits transmitted
+is odd.
+Write a program that computes the parity bit for groups of 8 bits entered by the
+user using even parity. Your program should read strings containing 8 bits until the
+user enters a blank line. After each string is entered by the user your program should
+display a clear message indicating whether the parity bit should be 0 or 1. Display
+an appropriate error message if the user enters something other than 8 bits.
+## Ejercicio 69
+The value of π can be approximated by the following infinite series:
+Write a program that displays 15 approximations of π. The first approximation
+shouldmake use of only the first termfrom the infinite series.Each additional approximation displayed by your program should include onemore term in the series,making
+it a better approximation of π than any of the approximations displayed previously.
+## Ejercicio 70
+One of the first known examples of encryption was used by Julius Caesar. Caesar
+needed to provide written instructions to his generals, but he didn’t want his enemies
+to learn his plans if the message slipped into their hands. As result, he developed
+what later became known as the Caesar Cipher.
+The idea behind this cipher is simple (and as a result, it provides no protection
+against modern code breaking techniques). Each letter in the original message is
+shifted by 3 places. As a result, A becomes D, B becomes E, C becomes F, D
+becomes G, etc. The last three letters in the alphabet are wrapped around to the
+beginning: X becomes A, Y becomes B and Z becomes C. Non-letter characters are
+not modified by the cipher.
+Write a program that implements a Caesar cipher. Allow the user to supply the
+message and the shift amount, and then display the shifted message. Ensure that
+your program encodes both uppercase and lowercase letters. Your program should
+also support negative shift values so that it can be used both to encode messages and
+decode messages.
+## Ejercicio 71
+Write a program that implements Newton’s method to compute and display the square
+root of a number entered by the user. The algorithm for Newton’s method follows:
+Read x from the user
+Initialize guess to x/2
+While guess is not good enough do
+Update guess to be the average of guess and x/guess
+When this algorithm completes, guess contains an approximation of the square
+root. The quality of the approximation depends on how you define “good enough”.
+In the author’s solution, guess was considered good enough when the absolute value
+of the difference between guess ∗ guess and x was less than or equal to 10−12.
+## Ejercicio 72
+A string is a palindrome if it is identical forward and backward. For example “anna”,
+“civic”, “level” and “hannah” are all examples of palindromic words.Write a program
+that reads a string from the user and uses a loop to determines whether or not it is a
+palindrome. Display the result, including a meaningful output message.
+## Ejercicio 73
+There are numerous phrases that are palindromes when spacing is ignored. Examples
+include “go dog”, “flee to me remote elf” and “some men interpret nine memos”,
+among many others. Extend your solution to Exercise 72 so that it ignores spacing
+whiledeterminingwhetherornotastringisapalindrome.Foranadditionalchallenge,
+extend your solution so that is also ignores punctuation marks and treats uppercase
+and lowercase letters as equivalent.
+## Ejercicio 74
+In this exercise you will create a program that displays a multiplication table that
+shows the products of all combinations of integers from 1 times 1 up to and including
+10 times 10. Your multiplication table should include a row of labels across the top
+of it containing the numbers 1 through 10. It should also include labels down the left
+side consisting of the numbers 1 through 10. The expected output from the program
+is shown below:
+When completing this exercise you will probably find it helpful to be able to
+print out a value without moving down to the next line. This can be accomplished
+by added end="" as the last parameter to your print statement. For example,
+print("A") will display the letter A and then move down to the next line. The
+statement print("A", end="") will display the letter A without moving down
+to the next line, causing the next print statement to display its result on the same line
+as the letter A.
+## Ejercicio 75
+The greatest common divisor of two positive integers, n and m, is the largest number,
+d, which divides evenly into both n and m. There are several algorithms that can be
+used to solve this problem, including:
+Initialize d to the smaller of m and n.
+While d does not evenly divide m or d does not evenly divide n do
+Decrease the value of d by 1
+Report d as the greatest common divisor of n and m
+Write a program that reads two positive integers from the user and uses this algorithm
+to determine and report their greatest common divisor.
+
